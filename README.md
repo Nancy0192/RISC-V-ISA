@@ -6,8 +6,12 @@ This repository takes you through the RISC - V ISA.
 **Day 1 - Introduction to RISC-V ISA And GNU compiler toolchain**
 - Installation
 - Introduction
-- Labwork
 - Integer Number Representation
+- Labwork
+
+**Day 2 - Introduction to ABI and basic verification flow**
+- Application Binary Interface
+
 
 
 
@@ -195,7 +199,7 @@ Some of the commands used in debugger:
 </details>
 
 
-<details><summary><strong>LAB 4 : Signed And Unsigned Number</strong></summary>
+<details><summary><strong>LAB 4 : Unsigned Number</strong></summary>
 <br>
 Code for UnsignedHighest
 
@@ -211,7 +215,163 @@ return 0;
 
 Compile it to see:
 
-![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/b8e91583-e2cc-417c-9491-84fa4e79ae5e)
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/ef660e23-fee7-438c-81d0-dbcc9c0ac50c)
+
+
+<br>
+<br>
+Code for UnsignedLowest
+
+```
+#include <stdio.h>
+#include <math.h>
+int main() {
+unsigned long long int max = (unsigned long long int) (pow(2,64)*-1);
+printf("highest number represented by unsigned long long int is %llu\n", max);
+return 0;
+}
+```
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/b19d71cc-58f2-4ea8-9995-b7eda74fc247)
+
+
 
 </details>
+
+<details><summary><strong>LAB 4 : Signed Number</strong></summary>
+<br>
+Code for signed highest and lowest:
+
+```
+#include <stdio.h>
+#include <math.h>
+int main() {
+long long int max = (long long int) (pow(2,63) -1);
+long long int min = (long long int) (pow(2,63) * -1);
+printf("highest number represented by long long int is %lld\n", max);
+printf("lowest number represented by long long int is %lld\n", min);
+return 0;
+}
+```
+
+
+
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/aceb08b2-cede-4a9b-887d-fee20cd677ee)
+
+
+
+</details>
+
+
+
+## Day 2 - Introduction to ABI and basic verification flow
+## Application Binary Interface
+<details><summary><strong>ABI</strong></summary>
+<br>
+The Application Binary Interface (ABI) in the context of computer architecture refers to the set of rules and conventions that dictate how software components (such as compiled binaries and libraries) interact with each other at the binary level. The ABI defines various aspects such as parameter passing, register usage, memory layout, and system call invocation. Each architecture, including RISC-V, has its own ABI that software must adhere to in order to ensure compatibility and interoperability.
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/8cd557fa-3f0f-4ba2-9a98-ae74e259db02)
+
+- The application programmer can access some part of the RISC-V processor or any other processor via registers.
+- In Risc-V architecture we have 32 registers whose length is defined by "XLEN". It is 32 for RV32 and 64 for RV64.
+
+</details>
+
+<details><summary><strong>Memory Allocation</strong></summary>
+  <br>
+There are 2 ways to load the data into the registers either the data is directly loaded in the registers or it is first stored in the memory and then the memory address is stored into the register as illustrated by the image.
+<br>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/430ae82d-2f14-4334-9f51-1952923f5f66)
+
+<br>
+- Little-endian memory addressing system means that the least significant group of 8-bits will be stored in the lowest memory address.
+  
+</details>
+
+
+<details><summary><strong>Load, Add and Store Instruction</strong></summary>
+  
+- Load Instruction:   
+The RISC-V assembly instruction ld x8, 16(x23) is used to load a 64-bit value from memory into a register. Let's break down the components of this instruction:<br>
+  ld: This is the mnemonic for the "Load Doubleword" instruction, which is used to load a 64-bit value from memory.<br>
+  x8: This is the destination register. The value loaded from memory will be stored in register x8.<br>
+  16(x23): This is the memory address where the value is located. x23 is a register, and 16 is an immediate offset added to the value in x23 to calculate the memory address.<br>
+  
+- Add Instruction: Similarly, the instruction "add x8, x24, x8" in RISC-V performs the operation of adding the values in registers x24 and x8, and then stores the result back in register x8.
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/c7575049-4d90-4fe8-be64-f2c4c20cd7a6)
+
+  
+- Store Instruction: The instruction "sd x8, 8(x23)" in RISC-V performs the operation of storing the value in register x8 into memory at an address calculated by adding an offset of 8 bytes to the base address stored in register x23.
+<br>
+Lets see how it fits within the RISC-V 32-bit instruction format:<br>
+  Opcode (7 bits): The opcode field specifies the operation of the instruction. For the load instruction, the opcode might be a specific value that indicates a load operation.<br>
+  Rd (5 bits): In this instruction, x8 is the destination register where the loaded value will be stored. The register x8 is encoded using a 5-bit field that represents the destination register.<br>
+  Immediate (12 bits): The immediate field in this instruction is used to specify the offset from the base address stored in register x23. In the example instruction, the immediate value is 16, which is encoded using a 12-bit field. This immediate value represents the offset in bytes from the base address in register x23.<br>
+  Rs1 (5 bits): The source register x23 is used as the base address for the memory access operation. The register x23 is encoded using a 5-bit field that represents the source register.<br>
+  Opcode Extension (3 bits): This might indicate the specific extension or variant of the instruction. For example, for the "ld" instruction, the extension might specify the size of the loaded data (byte, halfword, word, doubleword).<br>
+
+  ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/b1c8909f-980f-4e4b-8a5e-bfebf876588b)
+
+  
+</details>
+
+<details><summary><strong>Register's ABI Names</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/b2f92695-55a6-41b4-b665-18a1e048324d)
+
+
+
+</details>
+
+
+## Labwork
+<details><summary><strong>Lab 1</strong></summary>
+<br>
+C Code :
+
+```
+#include<stdio.h>
+
+extern int load(int x,int y);
+int main(){
+
+	int result=0;
+	int count =9;
+	result=load(0x0,count+1);
+	printf("sum of number from 1 to %d is %d\n",count,result);
+}
+```
+
+Load file :
+
+```
+.section .text
+.global load
+.type load,@function
+
+load:
+	add a4, a0, zero
+	add a2, a0, a1
+	add a3, a0, zero
+loop:	add a4, a3, a4
+	addi a3, a3, 1
+	blt a3, a2, loop
+	add a0, a4,zero
+	ret
+```
+Compile it using following commands:
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/92d9049e-5703-4d07-bf21-32d5ff6cb0ac)
+
+  
+</details>
+
+
+
+
+
+
 
