@@ -11,6 +11,10 @@ This repository takes you through the RISC - V ISA.
 
 **Day 2 - Introduction to ABI and basic verification flow**
 - Application Binary Interface
+- Labwork
+
+**Day 3 - Digital Logic with TL-Verilog and Makerchip**
+- Combinational logic in TL-Verilog using Makerchip
 
 
 
@@ -387,9 +391,108 @@ chmod 777 rv32im.sh
 </details>
 
 
+## Day 3 - Digital Logic with TL-Verilog and Makerchip 
+## Combinational logic in TL-Verilog using Makerchip
+<details><summary><strong>Logic Gates</strong></summary>
+<br>
+Basic Gates:
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/810ed624-0fee-40e4-b729-28ae5cb8f680)
+
+</details>
+
+<details><summary><strong>Combinational Circuit</strong></summary>
+
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/0a839b8a-40af-460a-bc64-517441f87bd3)
+
+Boolean Operators:
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/66444f0e-2538-4ce1-8ada-07903da189cb)
 
 
 
+ 
+</details>
+
+
+
+
+
+
+<details><summary><strong>Labwork</strong></summary>
+<details><summary><strong>Lab 1 : Maker Platform</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/9e2310e3-c67b-494b-bb60-429f1d817cec)
+
+	
+</details>
+<details><summary><strong>Lab 2 : Inverter</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/341bc2b1-351b-4d01-a283-f29128155a97)
+
+
+ 
+</details>
+<details><summary><strong>Lab 3 : Vectors</strong></summary>
+
+ ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/1871521a-91f0-470d-8496-b9f4f5a9d871)
+
+</details>
+
+<details><summary><strong>Lab 4 : Mux</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/08b46bd3-88ed-4a1f-a5d9-37c2e073aeb8)
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/5cdbd401-3beb-4341-ba9e-ad9b15be7ed5)
+
+
+
+</details>
+
+<details><summary><strong>Lab 5 : Combinational Calculator</strong></summary>
+
+ ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/cf99da17-7cc7-4013-9066-98d0870ee588)
+
+
+</details>
+</details>
+
+## Sequential Logic
+<details><summary><strong>Sequential Circuit</strong></summary>
+A sequential circuit is a type of digital circuit that has memory and the ability to store and process information based on previous states. It contrasts with a combinational circuit, which doesn't have memory and processes information solely based on its current inputs.<br>
+Sequential logic introduces a clock in the circuit as well as reset signal which is used to get all the flipflops into a known state.<br>
+Example: D-Flip Flop
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/f88e3db6-c1e3-4238-9841-19dd06e4b70a)
+
+	
+</details>
+<details><summary><strong>Labwork</strong></summary>
+
+<details><summary><strong>Lab 1: Fibonacci Series</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/9f996d41-8b2a-416d-af21-a64874a3ec42)
+
+
+</details>
+
+
+<details><summary><strong>Lab 2: Counter</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/6018eacb-0cb8-452c-a19a-8b9548d47bb2)
+
+</details>
+
+<details><summary><strong>Lab 3: Sequential calculator</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/2c8bcfce-2c6c-4571-bee6-969b35769e2b)
+
+ 
+</details>
+
+
+</details>
 
 
 
