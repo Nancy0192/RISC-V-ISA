@@ -369,6 +369,27 @@ Compile it using following commands:
   
 </details>
 
+<details><summary><strong>Lab 2 - Run C Program On RISC-V CPU</strong></summary>
+
+Commands to be executed:
+
+```
+git clone https://github.com/kunalg123/riscv_workshop_collaterals.git
+cd ~/riscv_workshop_collaterals/labs/
+chmod 777 rv32im.sh
+./rv32im.sh
+```
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/add4782f-2748-406f-ba01-b074fdea39ff)
+
+
+
+</details>
+
+
+
+
+
 
 
 
