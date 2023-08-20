@@ -15,6 +15,10 @@ This repository takes you through the RISC - V ISA.
 
 **Day 3 - Digital Logic with TL-Verilog and Makerchip**
 - Combinational logic in TL-Verilog using Makerchip
+- Sequential Logic
+- Pipelined Logic
+- Validity
+- Wrap-up
 
 
 
@@ -497,6 +501,124 @@ Example: D-Flip Flop
 
 
 
+## Pipelined Logic
+
+<details><summary><strong>Pipeling</strong></summary>
+Pipelining refers to a technique used to improve the overall performance of a processor by allowing multiple instructions to overlap in execution. This enables the processor to achieve a higher instruction throughput and better utilization of its functional units.<br>
+
+Let us understand through an example:
+
+We will take the example of a pythagoras theorem. The simple pipelined structure for it is shown below:
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/bae1e5ba-e67c-42ea-ac3f-6e74ef56dab4)
+
+We have divided it in three stages :
+First is squaring of both the numbers, second includes the adding of numbers and third does the squareroot of the number.
+
+The implementation of pipelining is shown below:
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/9dd45d85-b056-48f1-b85d-ed9db8669db5)
+
+	
+</details>
 
 
+<details><summary><strong>Labwork</strong></summary>
+
+<details><summary><strong>Lab 1 - Fibonacci Series</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/0a9ceeba-4b2f-4178-86ab-8017c1c782a9)
+
+
+ 
+</details>
+
+<details><summary><strong>Lab 2 : Lab on Error Conditions with Computational Pipelining</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/0fce58df-58a8-40fe-bdb9-34dc6f2d8674)
+
+
+ 
+</details>
+
+<details><summary><strong>Lab 3 : Counter And Calculator In Pipeline</strong></summary>
+
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/25fe2fdb-edfe-4e6f-a270-f0f9a7b4b84e)
+
+</details>
+
+<details><summary><strong>Lab 4 : Cycle Calculator</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/c64160f5-53f9-42e4-bb2a-d8b5729c5fd2)
+
+	
+</details>
+
+ 
+</details>
+
+
+## Validity
+<details><summary><strong>Validity</strong></summary>
+	<br>
+"Validity" is a fundamental concept that helps describe communication between modules or components in a more intuitive way. The validity feature is used to represent whether the data being transmitted or processed is valid and should be considered meaningful by the receiving module.<br>
+Valdity provides:
+	
+- Easier debug
+- Cleaner design
+- Better error checking
+- Automated clock gating
+
+
+**Clock Gating** 
+<br>
+Clock gating is a power-saving technique used in digital circuit design, including microprocessors and other integrated circuits, to reduce power consumption by selectively enabling or disabling clock signals to specific parts of a circuit. This technique is particularly effective in scenarios where parts of a circuit are idle or not actively performing computations.
+
+- Clock gating avoids toggling clock signals.
+
+
+**Example Of Validity On Pythagoras Theorem**
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/8f9894cb-117a-4c6a-9267-88f02c2d2a7e)
+
+ 
+</details>
+
+<details><summary><strong>Labwork</strong></summary>
+<details><summary><strong>Lab 1: Distance Accumulator</strong></summary></details>
+
+ 
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/2051abb0-5dea-4c6e-88e8-0476c3f84f59)
+
+
+</details>
+
+<details><summary><strong>Lab 2 : Cycle Calculator With Validity</strong></summary>
+
+ ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/d3eb0956-0b3b-4f84-b331-a2bb5141ca4d)
+
+</details>
+
+
+<details><summary><strong>Lab 2 : Calculator With Single Value Memory</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/2a119482-d365-44b3-8795-00ad1b646eee)
+
+
+</details>
+
+
+## Wrap-up
+<details><summary><strong>Labwork</strong></summary>
+<details><summary><strong>Lab 1 : Conways's Game Of Life</strong></summary>
+	
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/8d2431ad-6a76-46c3-88fa-82cb1d1959e9)
+
+
+
+</details>
+
+ 
+</details>
 
