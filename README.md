@@ -23,6 +23,7 @@ This repository takes you through the RISC - V ISA.
 **Day 4 - Basic RISC-V CPU micro-architecture**
 - [Simple RISC-V Micro-architecture](#simple-risc-v-micro-architecture)
 - [Fetch and Code](#fetch-and-code)
+- [RISC-V Control Logic](#risc-v-control-logic)
 
 
 
@@ -733,4 +734,34 @@ Components:
 </details>
 
 	
+</details>
+
+
+## RISC-V Control Logic
+<details><summary><strong>Lab</strong></summary>
+
+<details><summary><strong>Lab 1 : Register File Read</strong></summary>
+
+ ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/3eaa7e9c-99f0-4aff-9eec-cc32eced31de)
+
+
+</details>
+
+<details><summary><strong>Lab 2 : ALU</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/7bdf2b13-ab74-4009-b222-a607f180be54)
+
+
+ 
+</details>
+
+<details><summary><strong>Lab 3 : Register File Write</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/a20a6fda-9f68-46c5-969e-e08daeef6cbd)
+
+
+ 
+</details>
+
+ 
 </details>
