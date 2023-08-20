@@ -20,6 +20,10 @@ This repository takes you through the RISC - V ISA.
 - Validity
 - Wrap-up
 
+**Day 4 - Basic RISC-V CPU micro-architecture**
+- Simple
+- Fetch and Code
+
 
 
 
@@ -586,7 +590,8 @@ Clock gating is a power-saving technique used in digital circuit design, includi
 </details>
 
 <details><summary><strong>Labwork</strong></summary>
-<details><summary><strong>Lab 1: Distance Accumulator</strong></summary></details>
+
+<details><summary><strong>Lab 1: Distance Accumulator</strong></summary>
 
  
 ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/2051abb0-5dea-4c6e-88e8-0476c3f84f59)
@@ -601,11 +606,12 @@ Clock gating is a power-saving technique used in digital circuit design, includi
 </details>
 
 
-<details><summary><strong>Lab 2 : Calculator With Single Value Memory</strong></summary>
+<details><summary><strong>Lab 3 : Calculator With Single Value Memory</strong></summary>
 
 ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/2a119482-d365-44b3-8795-00ad1b646eee)
 
 
+</details>
 </details>
 
 
@@ -622,3 +628,109 @@ Clock gating is a power-saving technique used in digital circuit design, includi
  
 </details>
 
+
+
+## Day 4 - Basic RISC-V CPU micro-architecture
+## Simple RISC-V Micro-architecture
+<details><summary><strong>Micro-architecture Of Single Cycle RISC-V CPU</strong></summary>
+
+The User-Level Simple RISC-V Microarchitecture is a basic design representing a simplified version of a RISC-V processor's core, catering to user-level instructions and operations. This microarchitecture provides a concise overview of the core components without delving into advanced features.
+
+Components:
+
+- Instruction Fetch (IF):
+  - Fetches instructions from memory using the program counter (PC).
+  - Increments the PC for the next instruction.
+  - Passes the fetched instruction to the Decode stage.
+
+- Instruction Decode (ID):
+  - Decodes the fetched instruction to identify the operation and operands.
+  - Determines the instruction type and control signals.
+  - Sends control signals to relevant units.
+
+- Register File (RF):
+  - Contains general-purpose registers for temporary data storage.
+  - Reads data from registers based on instruction operands.
+  - Sends data to the Execute stage.
+
+- Execution (EXE):
+  - Performs basic arithmetic and logic operations.
+  - Executes operations using the ALU.
+  - Handles simple data manipulation tasks.
+
+- Memory Access (MEM):
+  - Manages load and store operations.
+  - Calculates memory addresses and interacts with data memory.
+  -  Handles simple memory transfers.
+
+- Write Back (WB):
+  - Writes results of operations back to registers.
+  - Receives data from the Execute or Memory stage.
+  - Updates destination registers.
+
+**Example:**
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/dacf464f-89cb-4726-9c74-38936c1afe75)
+
+ 
+</details>
+
+## Fetch and Code
+<details><summary><strong>Labwork</strong></summary>
+<details><summary><strong>Lab 1 : PC</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/878e6511-300e-4cc1-a4d6-c18878c5279d)
+
+
+</details>
+
+<details><summary><strong>Lab 2 : Fetch</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/83220908-d87d-4de4-8110-df3bfd26f9ea)
+
+
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/0a352288-09fa-4d1b-a38a-004626c34331)
+
+
+ 
+</details>
+
+<details><summary><strong>Lab 3 : Instruction Type Decoder</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/071986ac-9e1a-4d67-957d-f976f8cc7dc6)
+
+
+ 
+</details>
+
+<details><summary><strong>Lab 4 : Instruction Immediate Decode</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/f622d1e8-0038-4a52-8718-728cacd0449c)
+
+	
+</details>
+
+<details><summary><strong>Lab 5 : Instruction Decode</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/d6478989-0f7d-41db-bdd4-430a9503316e)
+
+ 
+</details>
+
+<details><summary><strong>Lab 6 : Instruction Field Decode</strong></summary>
+
+**Decoder 1**
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/1d668bd6-49f8-443e-84d3-a6dadb1cbb19)
+
+**Decoder 2**
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/127ce918-9998-48e2-ad1e-a2f7cb98e69d)
+
+
+ 
+</details>
+
+	
+</details>
