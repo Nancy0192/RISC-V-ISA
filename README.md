@@ -4,10 +4,10 @@ This repository takes you through the RISC - V ISA.
 ## Overview
 
 **Day 1 - Introduction to RISC-V ISA And GNU compiler toolchain**
-- Installation
-- Introduction
-- Integer Number Representation
-- Labwork
+- [Installation](#installation)
+- [Introduction](#introduction)
+- [Integer Number Representation](#integer-number-representation)
+- [Labwork](#labwork)
 
 **Day 2 - Introduction to ABI and basic verification flow**
 - Application Binary Interface
@@ -30,7 +30,7 @@ This repository takes you through the RISC - V ISA.
 ## Day 1 - Introduction to RISC-V ISA And GNU compiler toolchain
 
 ## Installation
-<details><summary>Steps For Instastallation</summary>
+<details><summary>Steps For Installation</summary>
 Before you can build the RISC-V toolchain, you'll need to install some software dependencies:
 
 ```
