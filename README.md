@@ -10,15 +10,15 @@ This repository takes you through the RISC - V ISA.
 - [Labwork](#labwork)
 
 **Day 2 - Introduction to ABI and basic verification flow**
-- Application Binary Interface
-- Labwork
+- [Application Binary Interface](#application-binary-interface)
+- Labwork(#labwork)
 
 **Day 3 - Digital Logic with TL-Verilog and Makerchip**
-- Combinational logic in TL-Verilog using Makerchip
-- Sequential Logic
-- Pipelined Logic
-- Validity
-- Wrap-up
+- [Combinational logic in TL-Verilog using Makerchip](#combinational-logic-in-tl-verilog-using-makerchip)
+- [Sequential Logic](#sequential-logic)
+- [Pipelined Logic](#pipelined-logic)
+- [Validity](#validity)
+- [Wrap-up](#wrap-up)
 
 **Day 4 - Basic RISC-V CPU micro-architecture**
 - Simple
