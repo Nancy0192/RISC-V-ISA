@@ -11,7 +11,7 @@ This repository takes you through the RISC - V ISA.
 
 **Day 2 - Introduction to ABI and basic verification flow**
 - [Application Binary Interface](#application-binary-interface)
-- [Labwork](#labwork)
+- [Labs](#labs)
 
 **Day 3 - Digital Logic with TL-Verilog and Makerchip**
 - [Combinational logic in TL-Verilog using Makerchip](#combinational-logic-in-tl-verilog-using-makerchip)
@@ -21,8 +21,8 @@ This repository takes you through the RISC - V ISA.
 - [Wrap-up](#wrap-up)
 
 **Day 4 - Basic RISC-V CPU micro-architecture**
-- Simple
-- Fetch and Code
+- [Simple RISC-V Micro-architecture](#simple-risc-v-micro-architecture)
+- [Fetch and Code](#fetch-and-code)
 
 
 
@@ -339,7 +339,7 @@ Lets see how it fits within the RISC-V 32-bit instruction format:<br>
 </details>
 
 
-## Labwork
+## Labs
 <details><summary><strong>Lab 1</strong></summary>
 <br>
 C Code :
