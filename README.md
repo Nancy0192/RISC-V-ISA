@@ -486,7 +486,8 @@ Example: D-Flip Flop
 
 <details><summary><strong>Lab 3: Sequential calculator</strong></summary>
 
-![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/2c8bcfce-2c6c-4571-bee6-969b35769e2b)
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/d7885fbf-4168-4317-aa4a-6de6b9ac702d)
+
 
  
 </details>
