@@ -11,7 +11,7 @@ This repository takes you through the RISC - V ISA.
 
 **Day 2 - Introduction to ABI and basic verification flow**
 - [Application Binary Interface](#application-binary-interface)
-- Labwork(#labwork)
+- [Labwork](#labwork)
 
 **Day 3 - Digital Logic with TL-Verilog and Makerchip**
 - [Combinational logic in TL-Verilog using Makerchip](#combinational-logic-in-tl-verilog-using-makerchip)
