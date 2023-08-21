@@ -760,6 +760,12 @@ Components:
 ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/a20a6fda-9f68-46c5-969e-e08daeef6cbd)
 
 
+</details>
+
+<details><summary><strong>Lab 3 : Branch Instruction</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/ecccb743-4d69-4457-9518-2f8d3e69f12e)
+
  
 </details>
 
