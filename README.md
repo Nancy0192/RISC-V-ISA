@@ -30,6 +30,8 @@ This repository takes you through the RISC - V ISA.
 - [Lab](#lab)
 - [Final Implementation](#final-implementation)
 
+[References](#references)
+
 
 ## Day 1 - Introduction to RISC-V ISA And GNU compiler toolchain
 
@@ -1128,6 +1130,15 @@ Components:
    endmodule
 ```
 </details>
+
+
+## References
+
+- https://github.com/stevehoover/RISC-V_MYTH_Workshop
+- https://www.makerchip.com
+- https://www.vsdiat.com
+- https://github.com/RISCV-MYTH-WORKSHOP/riscv_myth_workshop_mar21-rahulgupta177
+- https://github.com/Shivangi2207/RISC-V
 
 
 
