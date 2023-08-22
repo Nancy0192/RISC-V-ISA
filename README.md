@@ -792,7 +792,8 @@ Components:
 ## Day 5 - Complete Pipelined RISC-V CPU micro-architecture
 
 <details><summary><strong>Pipeline Hazards</strong></summary>
-**Control Flow Hazards** Control flow hazards occur when the sequence of instructions being executed is altered due to the outcome of a branch instruction (conditional jump or branch). In a pipelined processor, instructions are fetched and executed in stages, and the pipeline can be affected by branch instructions that change the program counter (PC), causing a misprediction in the instruction fetch stage.<br>
+	
+**Control Flow Hazards**  Control flow hazards occur when the sequence of instructions being executed is altered due to the outcome of a branch instruction (conditional jump or branch). In a pipelined processor, instructions are fetched and executed in stages, and the pipeline can be affected by branch instructions that change the program counter (PC), causing a misprediction in the instruction fetch stage.<br>
 <br>
 **Read-After-Write Hazards**     Read-after-write hazards occur when an instruction tries to read a data value from a register that is being written to by a previous instruction that has not yet completed. In a pipelined processor, instructions are executed in stages, and multiple instructions can be in different stages of execution simultaneously. If one instruction writes to a register and another instruction tries to read from the same register before the first instruction has completed writing, a hazard occurs.<br>
 </details>
