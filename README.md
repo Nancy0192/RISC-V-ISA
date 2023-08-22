@@ -762,12 +762,25 @@ Components:
 
 </details>
 
-<details><summary><strong>Lab 3 : Branch Instruction</strong></summary>
+<details><summary><strong>Lab 4 : Branch Instruction</strong></summary>
 
 ![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/ecccb743-4d69-4457-9518-2f8d3e69f12e)
 
  
 </details>
 
+
+<details><summary><strong>Lab 5 : Testbench</strong></summary>
+
+![image](https://github.com/Nancy0192/RISC-V-ISA/assets/140998633/7393417b-d1bc-4daa-8637-bb61fbb85f10)
+
+
  
 </details>
+
+ 
+</details>
+
+
+
+## Day 5 - Complete Pipelined RISC-V CPU micro-architecture
